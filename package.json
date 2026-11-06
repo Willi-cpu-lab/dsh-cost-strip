@@ -1,0 +1,33 @@
+{
+  "name": "dsh-cost-strip",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness plugin: shows the running CNY cost of the current conversation under the composer, priced with DeepSeek peak / off-peak rates.",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "cost",
+    "pricing"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "client": {
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
